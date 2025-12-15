@@ -1,14 +1,9 @@
 const express = require('express');
 const router = express.Router();
 
-router.get("../controller/students.controller.js", (req, res) =>{
-})
 
-router.post("../controller/students.controller.js", (req, res) =>{
-})
-
-router.put("../controller/students.controller.js", (req, res) =>{
-})
-
-router.delete("../controller/students.controller.js", (req, res) =>{
-})
+app.get("/students", studentsController.getStudents);
+app.get("/students/:id", studentsController.getStudentById);
+app.put("/students/:id", studentsController.updateStudent);
+app.post("/students", studentsController.addStudent);
+app.delete("/students/:id", studentsController.removeStudent);
