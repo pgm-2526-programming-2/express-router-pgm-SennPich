@@ -1,6 +1,14 @@
 const express = require('express');
 const router = express.Router();
-const paths = require("path");
 
-const students = require(paths.join(__dirname, "..", "controllers", "students.controller.js");
+router.get("../controller/students.controller.js", (req, res) =>{
+})
 
+router.post("../controller/students.controller.js", (req, res) =>{
+})
+
+router.put("../controller/students.controller.js", (req, res) =>{
+})
+
+router.delete("../controller/students.controller.js", (req, res) =>{
+})
