@@ -2,8 +2,8 @@ const express = require('express');
 const router = express.Router();
 
 
-app.get("/students", studentsController.getStudents);
-app.get("/students/:id", studentsController.getStudentById);
-app.put("/students/:id", studentsController.updateStudent);
-app.post("/students", studentsController.addStudent);
-app.delete("/students/:id", studentsController.removeStudent);
+router.get("/students", studentsController.getStudents);
+router.get("/students/:id", studentsController.getStudentById);
+router.put("/students/:id", studentsController.updateStudent);
+router.post("/students", studentsController.addStudent);
+router.delete("/students/:id", studentsController.removeStudent);
